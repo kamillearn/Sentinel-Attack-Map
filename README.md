@@ -12,10 +12,12 @@ In this lab, I created a vulnerable virtual machine (VM) to serve as a honeypot,
 
 # Languages and Utilities Used
 - PowerShell
+- Services within Azure: Log Analytics Workspace and Sentinel (Mircosoft's SIEM)
+- Kusto Query Language (KQL - Used to build world map)
+- Remote Desktop Protocol (RDP)
+- 3rd Party API: ipgeolocation.io
 - Event Viewer
-- Azure Virtual Machine
-- Analytics Workspace
-- Sentinel
+- Custom [Powershell Script](https://github.com/kamillearn/Threat-Hunting-with-Honeypots/blob/main/Log_exporter.ps1) written by [Josh Madakor](https://github.com/joshmadakor1)
 
 # Demonstration
 ### Powershell
