@@ -1,7 +1,7 @@
 # Azure Sentinel Threat Hunting with Honeypot
-
 In this lab, I created a vulnerable virtual machine (VM) to serve as a honeypot, attracting and capturing malicious activity, primarily RDP brute force attempts. I set up a log analytics workspace using Microsoft Sentinel to ingest logs from the VM. By downloading a custom PowerShell script, I was able to input IP addresses found in the VM’s Event Viewer under “Failed_RDP” into the script. The script then took these IP addresses and queried https://ipgeolocation.io/ to determine the geolocation of the attackers. The resulting data was copied onto my main computer and inserted into the log analytics workspace. Using these logs, I created a query in Sentinel to visualize the geographic locations of the attacks on an interactive Azure Sentinel map, providing a clear and insightful picture of the attack landscape and demonstrating the power of Azure Sentinel for security monitoring and threat hunting.
 
+![image](https://github.com/kamillearn/Threat-Hunting-with-Honeypots/assets/107491029/3e482bbd-adc8-4e3b-ac9a-39f306cf105d)
 
 # Learning Objectives:
 - Configuration & Deployment of Azure resources such as virtual machines, Log Analytics Workspaces, and Azure Sentinel
